@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flores Amarillas</title>
+    <link rel="icon" href="img/ico.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="Contenedor-Binicio">
+        <button class="Button" id="BVer"> Presiona y descrubre </button>
+    </div>
+
+    <div class="contenedor" id="contenedor-imagen">
+        <img src="img/flores.png" alt="Imagen">
+    </div>
+
+    <div class="Con-Emergente">
+        <div id="resultado" class="cua">
+            <p id="res">
+                Hola, solo quiero recordarte que eres 
+                muy especial e importante para mí y gracias por todo.❤️
+            </p>    
+            <button id="BotonCerrar" class="Button" onclick="cerrarImagen()">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="Con-2">
+        <h1 id="Titulo"> SELECCIONA TU SORPRESA</h1>
+        <div class="Con">
+            <button class="Button" id="B1"> 1 Flor 🌻</button>
+            <button class="Button" id="B12"> 12 Flores 💐</button>
+        </div>
+    </div>
+
+    <main class="Contenedor">
+        <canvas id="Flor" class="Flor" width="800" height="600"></canvas>
+
+        <div class="Texto">
+            <h2 id="Text">Para mi princesita, la mujer mas linda del mundo. ❤️</h2>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="interaccion.js"></script>
+    <script>
+        function cerrarImagen() {
+            var contenedorImagen = document.getElementById("contenedor-imagen");
+            contenedorImagen.style.display = "none";
+        }
+    </script>
+</body>
+</html>
